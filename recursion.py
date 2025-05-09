@@ -25,7 +25,7 @@ print(factorial(8)) # Ans = 40320 and so on ...
 
 # write a prog that calculate the sum of first 10 natural number
 def sum(n):
-    if(n == 0 or n == 1):
+    if(n == 0 ):
         return 0
     return sum(n-1) + n
 print(sum(10))
@@ -34,23 +34,23 @@ print(sum(10))
 Calculating sum(10):
 Let's step through the recursive calls:
 
-sum(10) = sum(9) + 10
+sum(1) = 0 + 1 = 1
 
-sum(9) = sum(8) + 9
+sum(2) = 1 + 2 = 3
 
-sum(8) = sum(7) + 8
+sum(3) = 3 + 3 = 6
 
-sum(7) = sum(6) + 7
+sum(4) = 6 + 4 = 10
 
-sum(6) = sum(5) + 6
+sum(5) = 10 + 5 = 15
 
-sum(5) = sum(4) + 5
+sum(6) = 15 + 6 = 21
 
-sum(4) = sum(3) + 4
+sum(7) = 21 + 7 = 28
 
-sum(3) = sum(2) + 3
+sum(8) = 28 + 8 = 36
 
-sum(2) = sum(1) + 2
+sum(9) = 36 + 9 = 45
 
-sum(1) = 0 (base case) 
+sum(10) = 45 + 10 = 55
 At the end Answer will be ("54") '''
